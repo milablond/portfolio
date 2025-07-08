@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no"
+    />
+    <title>Mila - Développeuse Junior</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="home">
+      <h1 class="hero-title">Mila</h1>
+      <p class="hero-subtitle" id="subtitle"></p>
+      <button class="play-button" onclick="openGame()">Jouer</button>
+    </section>
+
+    <section id="about">
+      <div class="about-content">
+        <div class="about-photo">
+          <img
+            class="profile-picture"
+            src="images/IMG_9610.JPG"
+            alt="Photo de profil"
+          />
+        </div>
+        <div class="about-text">
+          <h2>À propos</h2>
+          <p>
+            Développeuse Junior basée à Paris, je code des expériences web
+            modernes, performantes et sur mesure. J'accompagne mes clients de
+            l'idée à la mise en production de leurs projets digitaux.
+          </p>
+          <p>
+            Mon approche repose sur la rigueur technique et la clarté pour
+            livrer des solutions fiables et adaptées aux besoins de chaque
+            projet. J'utilise des technologies modernes et applique les bonnes
+            pratiques pour un résultat de qualité.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="skills-content">
+        <h2>Compétences</h2>
+        <div class="skills-grid">
+          <div class="skill-item" data-skill="95">
+            <div class="skill-name">HTML5 & CSS3</div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--skill-level: 95%"></div>
+            </div>
+            <div class="skill-percentage">95%</div>
+          </div>
+          <div class="skill-item" data-skill="90">
+            <div class="skill-name">JavaScript (ES6+)</div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--skill-level: 90%"></div>
+            </div>
+            <div class="skill-percentage">90%</div>
+          </div>
+          <div class="skill-item" data-skill="85">
+            <div class="skill-name">React</div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--skill-level: 85%"></div>
+            </div>
+            <div class="skill-percentage">85%</div>
+          </div>
+          <div class="skill-item" data-skill="35">
+            <div class="skill-name">Node.js & Express</div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--skill-level: 35%"></div>
+            </div>
+            <div class="skill-percentage">80%</div>
+          </div>
+          <div class="skill-item" data-skill="75">
+            <div class="skill-name">Git & GitHub</div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--skill-level: 75%"></div>
+            </div>
+            <div class="skill-percentage">75%</div>
+          </div>
+          <div class="skill-item" data-skill="70">
+            <div class="skill-name">WordPress / CMS</div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--skill-level: 70%"></div>
+            </div>
+            <div class="skill-percentage">70%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="projects-content">
+        <h2>Projets</h2>
+        <div class="slider-container">
+          <div class="slider" id="projectSlider">
+            <div class="project-card">
+              <img src="images/serrurier.png" alt="Photo d'aperçu du site" />
+              <h3 class="project-title">Serrurier Paris</h3>
+              <p class="project-description">
+                Site responsive pour un artisan serrurier avec présentation des
+                services, formulaire de contact/devis et page d'urgence.
+              </p>
+              <div class="project-buttons">
+                <button
+                  class="project-button"
+                  onclick="window.open('https://milablond.github.io/serrurier/', '_blank')"
+                >
+                  Aperçu
+                </button>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="images/memory.png" alt="Photo d'aperçu du site" />
+              <h3 class="project-title">Memory Game</h3>
+              <p class="project-description">
+                Jeu de memory classique avec une interface simple et chrono
+                intégré pour tester sa concentration et sa mémoire visuelle.
+              </p>
+              <div class="project-buttons">
+                <button
+                  class="project-button"
+                  onclick="window.open('https://milablond.github.io/memory-game/', '_blank')"
+                >
+                  Aperçu
+                </button>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="images/nude.png" alt="Photo d'aperçu du site" />
+              <h3 class="project-title">Nude Skincare</h3>
+              <p class="project-description">
+                Site e-commerce d'une marque de soins de la peau avec front
+                complet, navigation filtrée, fiches produit, panier, test de
+                peau et design épuré.
+              </p>
+              <div class="project-buttons">
+                <button
+                  class="project-button"
+                  onclick="window.open('https://milablond.github.io/skincare-brand/', '_blank')"
+                >
+                  Aperçu
+                </button>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="images/warda.png" alt="Photo d'aperçu du site" />
+              <h3 class="project-title">Warda and Co</h3>
+              <p class="project-description">
+                Site vitrine d’un restaurant marocain avec plusieurs pages :
+                accueil, menu dynamique et réservation en ligne.
+              </p>
+              <div class="project-buttons">
+                <button
+                  class="project-button"
+                  onclick="window.open('https://milablond.github.io/restaurant-site/', '_blank')"
+                >
+                  Aperçu
+                </button>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="images/escape.png" alt="Photo d'aperçu du site" />
+              <h3 class="project-title">Mind trap</h3>
+              <p class="project-description">
+                Mini escape-game interactif sur navigateur mêlant observation,
+                réflexion et pièges visuels. Chrono, gestion de la progression,
+                et UI immersive.
+              </p>
+              <div class="project-buttons">
+                <button
+                  class="project-button"
+                  onclick="window.open('https://milablond.github.io/escape-game/', '_blank')"
+                >
+                  Aperçu
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-nav">
+          <button class="slider-arrow" onclick="previousSlide()">‹</button>
+          <div class="slider-dots">
+            <div class="dot active" onclick="goToSlide(1)"></div>
+            <div class="dot" onclick="goToSlide(2)"></div>
+            <div class="dot" onclick="goToSlide(3)"></div>
+          </div>
+          <button class="slider-arrow" onclick="nextSlide()">›</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-content">
+        <h2>Contact</h2>
+        <button
+          class="contact-button"
+          onclick="window.location.href='mailto:milablondpro@gmail.com'"
+        >
+          Envoyer un mail
+        </button>
+        <p>
+          <a href="mailto:milablondpro@gmail.com" class="email-link"
+            >milablondpro@gmail.com</a
+          >
+        </p>
+      </div>
+    </section>
+
+    <!-- Modal pour le jeu -->
+    <div id="gameModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeGame()">&times;</span>
+        <h2>Mini-Jeu</h2>
+        <div class="game-info">
+          <div>Score: <span id="score">0</span></div>
+          <div>Temps: <span id="timer">30</span>s</div>
+        </div>
+        <div class="game-area" id="gameArea">
+          <div class="game-target" id="target"></div>
+        </div>
+        <div class="game-buttons">
+          <button class="game-button" onclick="startGame()">Commencer</button>
+          <button class="game-button" onclick="resetGame()">Recommencer</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
